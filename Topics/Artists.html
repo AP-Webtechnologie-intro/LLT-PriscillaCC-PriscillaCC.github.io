@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
     <header class="verwelkoming-header py-3">
@@ -22,18 +23,23 @@
           <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>          </div>
       </div>
     </header>
+    
     <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
-          <a class="p-2 text-muted" href="Topics/Merchandise.html">Merchandise</a>
-          <a class="p-2 text-muted" href="Topics/Artists.html">Artists</a>
-          <a class="p-2 text-muted" href="Topics/Christianity.html">Christianity</a>
-          <a class="p-2 text-muted" href="Topics/News.html">News</a>
-          <a class="p-2 text-muted" href="Topics/Music.html">Music</a>
-          <a class="p-2 text-muted" href="Topics/NewAge_Spiritual.html">New age & Spiritual </a>
+          <a class="p-2 text-muted" href="/Topics/Merchandise.html">Merchandise</a>
+          <a class="p-2 text-muted" href="/Topics/Artists.html">Artists</a>
+          <a class="p-2 text-muted" href="/Topics/Christianity.html">Christianity</a>
+          <a class="p-2 text-muted" href="/Topics/News.html">News</a>
+          <a class="p-2 text-muted" href="/Topics/Music.html">Music</a>
+          <a class="p-2 text-muted" href="/Topics/NewAge_Spiritual.html">New age & Spiritual </a>
         </nav>
       </div>
       <h1><p><strong><em>Artists</em></strong></p></h1>
       <blockquote>
+        <figure class="figure">
+          <img src="Afbeeldingen/muziek.jpeg" class="card-img-top" alt="Muziek" >
+        <figcaption class="figure-caption text-right">Afbeelding: Muziek </figcaption>
+        </figure>
         <table class="table">
           <thead>
             <tr>
@@ -64,6 +70,21 @@
             </tr>
           </tbody>
         </table>
+      </blockquote>
+      <br>
+      <blockquote>
+        <div class="container">
+          <h1>Unveiling the Mysteries: A Journey through Christian Art and Artists</h1> 
+          <blockquote>
+          <ul class="list-group">
+           <li class="list-group-item"><strong>Early Christian Art:</strong>The earliest Christian artworks are small reliefs from Roman sarcophagi, dating to the beginning of the 2nd century. The largest groups of Early Christian paintings come from the tombs in the Catacombs of Rome.</li>
+           <li class="list-group-item"><strong>Christian Iconography:</strong> Christian art began when the church developed its Christian iconography. It heavily relied on sculptures, paintings, architecture, and various decorative arts.</li>
+           <li class="list-group-item"><strong>Christian Art Post 313 A.D. </strong>After 313 A.D., when Christianity was finally allowed to exist, Christian art further developed. The church used various types of art to create an identity for itself.</li>
+           <li class="list-group-item"><strong>Modern Christian Artists:</strong>Many modern artists such as Eric Gill, Marc Chagall, Henri Matisse, Jacob Epstein, Elisabeth Frink, and Graham Sutherland have produced works that contain themes and images from Christianity.</li>
+         </ul>
+       </div>
+      </blockquote>
+    </blockquote>
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         <a href="#A">A</a>
           <a href="#B">B</a>
@@ -122,7 +143,18 @@
           © 2024 Music World. All rights reserved.
         </div>
       </footer>
-      
+
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <div id="map"></div>
+      <script>
+      var map = L.map('map').setView([51.05, 5.13], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(map);
+      var marker = L.marker([ 51.045096, 5.231160]).addTo(map);
+      </script>
+  
       </body>
       </html>
         
