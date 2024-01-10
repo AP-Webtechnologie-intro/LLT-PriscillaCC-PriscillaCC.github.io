@@ -8,52 +8,48 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="leaflet.js" />
+  <style>
+      #map {
+          width: 100%;
+          height: 400px;
+      }
+  </style>
 </head>
 
 <body>
   <div class="container">
-    <header class="verwelkoming-header py-3">
+    <header class="blog-header py-3 style=">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-4 pt-1">
           <a class="text-muted" href="#">Subscribe</a>
         </div>
         <div class="col-4 text-center">
-          <a class="header-logo text-dark" href="#">Open the world of Music</a>
+          <a class="blog-header-logo text-dark" href="#">Open the world of Music</a>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center"> <a class="text-muted" href="#"> <a class="text-muted" href="#">
           <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
-        </div>
+         </div>
       </div>
     </header>
-    
+
     <div class="nav-scroller py-1 mb-2">
       <nav class="nav d-flex justify-content-between">
-        <div class="nav-scroller py-1 mb-2">
-          <nav class="nav d-flex justify-content-between">
-            <a class="p-2 text-muted" href="/index.html">Home</a>
-            <a class="p-2 text-muted" href="/Topics/Merchandise.html">Merchandise</a>
-            <a class="p-2 text-muted" href="/Topics/Artists.html">Artists</a>
-            <a class="p-2 text-muted" href="/Topics/Christianity.html">Christianity</a>
-            <a class="p-2 text-muted" href="/Topics/News.html">News</a>
-            <a class="p-2 text-muted" href="/Topics/Lyrics.html">Lyrics</a>
-            <a class="p-2 text-muted" href="/Topics/NewAge_Spirituality.html">New age & Spirituality </a>
-          </nav>
+        <a class="p-2 text-muted" href="#">Home</a>
+        <a class="p-2 text-muted" href="/Topics/Merchandise.html">Merchandise</a>
+        <a class="p-2 text-muted" href="/Topics/Artists.html">Artists</a>
+        <a class="p-2 text-muted" href="/Topics/Christianity.html">Christianity</a>
+        <a class="p-2 text-muted" href="/Topics/News.html">News</a>
+        <a class="p-2 text-muted" href="/Topics/Music.html">Music</a>
+        <a class="p-2 text-muted" href="/Topics/NewAge_Spirituality.html">New age & Spirituality </a>
     </div>
-
-    <form>
+<br>
     <div class="container">
-        <h2>Heb je een website gerelateerde vraag dan kun je terecht bij de Webdesigner, voor al de rest kun je bij mij terecht (Priscilla Claes)</h2>
-        <form>
-            <div class="radio">
-                <label><input type="radio" name="person" value="person1">Priscilla Claes</label>
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="person" value="person2">Sanne Frederix (Webdesigner)</label>
-            </div>
-        </form>
-        </div>
-</body>
-</html>
+      <h2>Heb je een website gerelateerde vraag dan kun je terecht bij de Webdesigner, voor al de rest kun je bij mij terecht (Priscilla Claes)</h2>
+      <form>
+        <input type="radio" id="person1" name="person" value="Person 1"> Priscilla Claes
+        <input type="radio" id="person2" name="person" value="Person 2">Sanne Frederix (Webdesigner)
+      </form>
 
         <div class="form-group">
           <label for="name">Naam</label>
@@ -71,8 +67,14 @@
           <label for="message">Bericht</label>
           <textarea class="form-control" id="message" rows="3" placeholder="Voer uw bericht in"></textarea>
         </div>
+        <br>
         <button type="submit" class="btn btn-primary">Verzenden</button>
+        <br>
+
       </form>
+
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      
       </body>
       
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
